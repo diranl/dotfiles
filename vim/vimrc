@@ -72,6 +72,13 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+"------------NAVIGATION---------
+" Window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 "------------COMMAND-T----------
 noremap <C-t> <Esc>:CommandT<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
