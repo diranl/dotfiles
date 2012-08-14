@@ -26,12 +26,17 @@ set complete=.,w,b,u,t,i " Autocompletes
 
 "------------DISPLAY------------
 " Colorscheme
-set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
+if has("unix") 
+  let vimrc_uname = system("uname -o")
+  if vimrc_uname == "Cygwin"
+    set background=dark
+    let g:solarized_termtrans=1
+    let g:solarized_termcolors=256
+    let g:solarized_contrast="high"
+    let g:solarized_visibility="high"
+    colorscheme solarized
+  endif
+endif
 
 " Feature display
 set number " Show line numbers
@@ -81,7 +86,6 @@ map <C-l> <C-w>l
 
 "------------COMMAND-T----------
 noremap <C-t> <Esc>:CommandT<CR>
-noremap <leader>m <Esc>:CommandTBuffer<CR>
 noremap <leader>o <Esc>:CommandTFlush<CR>
 
 "------------CTAGS--------------
