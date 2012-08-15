@@ -26,16 +26,21 @@ set complete=.,w,b,u,t,i " Autocompletes
 
 "------------DISPLAY------------
 " Colorscheme
-if has("unix") 
-  let vimrc_uname = system("uname -o")
-  if vimrc_uname == "Cygwin"
+let vimrc_uname = system("uname -o")
+if vimrc_uname == "Cygwin\n" || has('gui_running')
     set background=dark
     let g:solarized_termtrans=1
     let g:solarized_termcolors=256
     let g:solarized_contrast="high"
     let g:solarized_visibility="high"
     colorscheme solarized
-  endif
+endif
+
+if has('gui_running')
+    set guifont=Courier_New:h11
+    " Copy paste
+    vmap <A-c> "*y 
+    map <A-v> "*p
 endif
 
 " Feature display
@@ -86,16 +91,26 @@ map <C-l> <C-w>l
 
 "------------COMMAND-T----------
 noremap <C-t> <Esc>:CommandT<CR>
-noremap <leader>o <Esc>:CommandTFlush<CR>
+noremap <leader>f <Esc>:CommandTFlush<CR>
 
 "------------CTAGS--------------
 set tags=tags
 nnoremap <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
-let Tlist_Ctags_Cmd = "/usr/bin/ctags"
-let Tlist_WinWidth = 45
-nnoremap <F4> :TlistToggle<cr>
+" Tagbar: a better TagList
+" let g:tagbar_usearrows = 1
+" nnoremap <F4> :TagbarToggle<CR>
+" 
+" let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+" let Tlist_WinWidth = 45
+" nnoremap <F4> :TlistToggle<cr>
 
+"------------SUPERTABS-----------
+let g:SuperTabDefaultCompletionType = "context"
 
+autocmd BufNewFile,BufRead *.cshtml set ft=html
+if vimrc_uname == "Cygwin\n"
+    autocmd BufNewFile,BufRead *.txt colorscheme default
+endif
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
