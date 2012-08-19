@@ -36,13 +36,6 @@ if vimrc_uname == "Cygwin\n" || has('gui_running')
     colorscheme solarized
 endif
 
-if has('gui_running')
-    set guifont=Courier_New:h11
-    " Copy paste
-    vmap <A-c> "*y 
-    map <A-v> "*p
-endif
-
 " Feature display
 set number " Show line numbers
 set ruler " (Bottom-right) Show line/col position
@@ -61,7 +54,8 @@ set ignorecase  " Case insensitive search
 set smartcase 
 set incsearch   " Incremental search
 set hlsearch
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>  " Search and replace 
+" Search and replace 
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 "------------INDENTATION-------
 set autoindent
@@ -75,8 +69,7 @@ set shiftwidth=2
 set expandtab
 
 "------------COMMAND SHORTCUT----
-" Substitue : for ;
-" No more shift pressing!
+" Swap : for ;
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
@@ -98,19 +91,26 @@ set tags=tags
 nnoremap <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Tagbar: a better TagList
-" let g:tagbar_usearrows = 1
-" nnoremap <F4> :TagbarToggle<CR>
-" 
-" let Tlist_Ctags_Cmd = "/usr/bin/ctags"
-" let Tlist_WinWidth = 45
-" nnoremap <F4> :TlistToggle<cr>
+let g:tagbar_usearrows = 1
+nnoremap <F4> :TagbarToggle<CR>
+
+"------------GVIM---------------
+if has('gui_running')
+    set guifont=Courier_New:h11
+    set guioptions=  " Removes: toolbar, scrollbar, taskbar
+    " Copy paste
+    vmap <A-c> "*y 
+    inoremap <A-v> "*p
+    set tabstop=4
+    set shiftwidth=4
+    set tags="C:\tags"
+endif
 
 "------------SUPERTABS-----------
 let g:SuperTabDefaultCompletionType = "context"
 
-autocmd BufNewFile,BufRead *.cshtml set ft=html
 if vimrc_uname == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
-autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+autocmd BufNewFile,BufRead *.cshtml set ft=html
+autocmd BufNewFile,BufRead *.less set ft=css
