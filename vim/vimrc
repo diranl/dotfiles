@@ -14,7 +14,7 @@ set nolazyredraw " No redrawing while executing macros
 
 let mapleader = ","
 
-nnoremap <silent> <C-l> :nohl<CR><C-l> " Remove hilighting
+nnoremap <silent> <C-i> :noh<CR> " Remove hilighting
 
 " resize vertical split window
 nmap <C-Up> <C-w>>
@@ -23,6 +23,10 @@ nmap <C-Down> <C-w><
 set backspace=indent,eol,start " Allow backspace over anything"
 
 set complete=.,w,b,u,t,i " Autocompletes
+
+nnoremap <F2> :set nonumber!<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <F4> :TagbarToggle<CR>
 
 "------------DISPLAY------------
 " Colorscheme
@@ -92,15 +96,13 @@ nnoremap <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " Tagbar: a better TagList
 let g:tagbar_usearrows = 1
-nnoremap <F4> :TagbarToggle<CR>
-nnoremap <F3> :NERDTreeToggle<CR>
 "------------GVIM---------------
 if has('gui_running')
     set guifont=Courier_New:h11
     set guioptions=  " Removes: toolbar, scrollbar, taskbar
     " Copy paste
     vmap <A-c> "*y 
-    inoremap <A-v> "*p
+    map <A-v> "*p
     set tabstop=4
     set shiftwidth=4
     set tags="C:\tags"
