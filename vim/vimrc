@@ -41,7 +41,7 @@ if vimrc_uname == "Cygwin\n" || has('gui_running')
 endif
 
 " Feature display
-set number " Show line numbers
+set nonumber " Not show line numbers (initially)
 set ruler " (Bottom-right) Show line/col position
 set ls=2 " (Bottom) path/filename + ruler
 set cursorline " Highlight current line
