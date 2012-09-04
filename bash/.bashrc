@@ -5,6 +5,10 @@ function git_diff() {
   git diff --no-ext-diff -w "$@" | vim -R -
 }
 
+grepcs() { 
+  find . -name '*.cs' -exec grep -nHri --color "$1" {} \; ; 
+}
+
 # Allow vi commands on bash editing
 set -o vi
 # ^p check for partial match in history

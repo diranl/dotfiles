@@ -42,7 +42,7 @@ let g:solarized_visibility="high"
 colorscheme solarized
 
 " Wildmenu
-highlight WildMenu ctermfg=green guifg=black guibg=white
+highlight WildMenu ctermfg=green guifg=green 
 
 " Feature display
 set nonumber " Not show line numbers (initially)
@@ -104,7 +104,7 @@ let g:tagbar_usearrows = 1
 let vimrc_uname = system("uname -o")
 if has('gui_running') 
     set guioptions=  " Removes: toolbar, scrollbar, taskbar
-    if uname != "GNU\Linux"
+    if vimrc_uname != "GNU\Linux"
       set guifont=Courier_New:h11
       " Copy paste
       vmap <A-c> "*y 
