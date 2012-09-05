@@ -118,6 +118,21 @@ endif
 "------------SUPERTABS-----------
 let g:SuperTabDefaultCompletionType = "context"
 
+"------------TFS-----------------
+" Tf Checkout
+function! TFCheckout()
+    exe '!tf checkout "' expand('%:p') '"'
+endfunction
+command! tfco :call TFCheckout()
+
+" Tf Add
+function! TFAdd()
+    exe '!tf add "' expand('%:p') '"'
+endfunction
+command! tfadd :call TFAdd()
+
+
+
 if vimrc_uname == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
