@@ -123,13 +123,13 @@ let g:SuperTabDefaultCompletionType = "context"
 function! TFCheckout()
     exe '!tf checkout "' expand('%:p') '"'
 endfunction
-command! tfco :call TFCheckout()
+command! Tfco :call TFCheckout()
 
 " Tf Add
 function! TFAdd()
     exe '!tf add "' expand('%:p') '"'
 endfunction
-command! tfadd :call TFAdd()
+command! Tfadd :call TFAdd()
 
 
 
