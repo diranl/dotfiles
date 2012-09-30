@@ -1,0 +1,19 @@
+shell "/bin/bash"
+
+bind ; resize max
+bind l resize =
+
+startup_message off
+autodetach on
+altscreen on
+
+caption string "%{= kB} %t%= STOP PROCASTINATION %?%F%{= Bk}%:%{= wk}%? %n "
+hardstatus alwayslastline
+hardstatus string '%{= kG}%{C}Screen: %{c}%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{C} %d-%m %{W}%c %{g}]'
+
+# split
+# screen bash
+# focus
+# screen bash
+# focus
+# resize max
