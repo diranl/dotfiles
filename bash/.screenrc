@@ -11,6 +11,13 @@ caption string "%{= kB} %t%= STOP PROCASTINATION %?%F%{= Bk}%:%{= wk}%? %n "
 hardstatus alwayslastline
 hardstatus string '%{= kG}%{C}Screen: %{c}%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{C} %d-%m %{W}%c %{g}]'
 
+chdir '/cygdrive/c/Users/dirali/Dropbox/MS Work'
+screen -t "TODO" vim + TODO.txt
+chdir 'C:\Datahub\Marketplace\Imp2\private\Source\Marketplace\Marketplace'
+screen -t "CODE"
+select 0
+
+
 # split
 # screen bash
 # focus

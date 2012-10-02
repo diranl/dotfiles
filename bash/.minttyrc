@@ -1,0 +1,17 @@
+BoldAsFont=yes
+CursorType=block
+Font=Courier New
+FontHeight=10
+FontSmoothing=full
+Locale=en_US
+Charset=UTF-8
+BackspaceSendsBS=yes
+CtrlAltIsAltGr=yes
+CtrlShiftShortcuts=yes
+Scrollbar=none
+PgUpDnScroll=yes
+Term=xterm-vt220
+Columns=97
+Rows=42
+AllowBlinking=yes
+ClicksPlaceCursor=yes
