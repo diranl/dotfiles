@@ -1,0 +1,3 @@
+# Operate Bash in VI editing mode
+set editing-mode vi
+set keymap vi

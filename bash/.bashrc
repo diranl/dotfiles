@@ -25,3 +25,5 @@ fi
 PS1="\[\033[01;30m\][\@]\u:\[\033[00m\]\W\$ "
 
 export TERM="xterm-256color"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
