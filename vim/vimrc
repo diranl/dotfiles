@@ -135,3 +135,19 @@ if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
 autocmd BufNewFile,BufRead *.less set ft=css
+
+if executable('coffeetags')
+  let g:tagbar_type_coffee = {
+        \ 'ctagsbin' : 'coffeetags',
+        \ 'ctagsargs' : '',
+        \ 'kinds' : [
+        \ 'f:functions',
+        \ 'o:object',
+        \ ],
+        \ 'sro' : ".",
+        \ 'kind2scope' : {
+        \ 'f' : 'object',
+        \ 'o' : 'object',
+        \ }
+        \ }
+endif
