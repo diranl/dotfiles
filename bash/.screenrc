@@ -13,7 +13,7 @@ caption string "%{= kB} %t%= STOP PROCASTINATION %?%F%{= Bk}%:%{= wk}%? %n "
 hardstatus alwayslastline
 hardstatus string '%{= kG}%{C}Screen: %{c}%{= kG}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{C} %d-%m %{W}%c %{g}]'
 
-chdir '/Users/diran/Dropbox/Ninja'
+#chdir '/Users/diran/Dropbox/Ninja'
 screen -t "JOURNAL" vim + Journal.txt
 chdir 
 screen -t "CODE"

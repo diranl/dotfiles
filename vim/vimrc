@@ -91,8 +91,20 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 "------------COMMAND-T----------
-noremap <C-t> :CommandT<CR>
-noremap <leader>f :CommandTFlush<CR>
+"noremap <C-t> :CommandT<CR>
+"noremap <leader>f :CommandTFlush<CR>
+
+"------------CTRL-P-------------
+set wildignore+=*.class,*.jar
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_by_filename = 1
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_mruf_include = '\.py$\|\.rb$|\.cpp$|\.cc$|\.h$|\.java$'
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cache_dir="/tmp/ctrlp"
+let g:ctrlp_max_files=1000000
+let g:ctrlp_clear_cache_on_exit=0
+let g:ctrlp_custom_ignore = '\v[\/](third_party|native_client|out)$'
 
 "------------CTAGS--------------
 set tags=tags
@@ -118,23 +130,8 @@ endif
 "------------SUPERTABS-----------
 let g:SuperTabDefaultCompletionType = "context"
 
-"------------TFS-----------------
-" Tf Checkout
-function! TFCheckout()
-    exe '!tf checkout "' expand('%:p') '"'
-endfunction
-command! Tfco :call TFCheckout()
-
-" Tf Add
-function! TFAdd()
-    exe '!tf add "' expand('%:p') '"'
-endfunction
-command! Tfadd :call TFAdd()
-
-
 
 if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
-autocmd BufNewFile,BufRead *.cshtml set ft=html
 autocmd BufNewFile,BufRead *.less set ft=css
