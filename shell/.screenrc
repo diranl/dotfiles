@@ -1,7 +1,8 @@
-shell "/bin/bash"
+shell "/bin/zsh"
 
 bind ; resize max
 bind l resize =
+bind k resize 15
 
 startup_message off
 autodetach on
