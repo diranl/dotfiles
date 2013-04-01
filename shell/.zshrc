@@ -19,12 +19,12 @@ alias 'll=ls -l'
 alias 'grep=grep --colour'
 
 #Safe bet
-alias 'rm=rm -i'
-alias 'mv=mv -i'
-alias 'cp=cp -i'
+#alias 'rm=rm -i'
+#alias 'mv=mv -i'
+#alias 'cp=cp -i'
 
 # Autoload screen if we aren't in it.  (Thanks Fjord!)
-if [[ $STY = '' ]] then screen -xR; fi
+# if [[ $STY = '' ]] then screen -xR; fi
 
 #{{{ ZSH Modules
 
@@ -102,18 +102,6 @@ setopt EXTENDED_GLOB
 # hows about arrays be awesome?  (that is, frew${cool}frew has frew surrounding all the variables, not just first and last
 setopt RC_EXPAND_PARAM
 
-#}}}
-
-#{{{ Variables
-export MATHPATH="$MANPATH:/usr/local/texlive/2007/texmf/doc/man"
-export INFOPATH="$INFOPATH:/usr/local/texlive/2007/texmf/doc/info"
-export PATH="$PATH:/usr/local/texlive/2007/bin/i386-linux"
-export RI="--format ansi"
-    
-declare -U path
-
-#export LANG=en_US
-export PAGER=most
 #}}}
 
 #{{{ External Files
@@ -202,10 +190,11 @@ bindkey '\e[4~' end-of-line
 # Incremental search is elite!
 bindkey -M vicmd "/" history-incremental-search-backward
 bindkey -M vicmd "?" history-incremental-search-forward
+bindkey '^R' history-incremental-search-backward
 
 # Search based on what you typed in already
-bindkey -M vicmd "//" history-beginning-search-backward
-bindkey -M vicmd "??" history-beginning-search-forward
+#bindkey -M vicmd "//" history-beginning-search-backward
+#bindkey -M vicmd "??" history-beginning-search-forward
 
 bindkey "\eOP" run-help
 
@@ -284,4 +273,6 @@ setopt HIST_FIND_NO_DUPS
 
 #}}}
 
-export TERM="xterm-256color"
+#{{{ Env variables
+source .zprofile
+#}}}
