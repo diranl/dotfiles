@@ -104,7 +104,11 @@ let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cache_dir="/tmp/ctrlp"
 let g:ctrlp_max_files=1000000
 let g:ctrlp_clear_cache_on_exit=0
-let g:ctrlp_custom_ignore = '\v[\/](third_party|native_client|out)$'
+" Sane Ignore For ctrlp
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$|\.class$'
+  \ }
 
 "------------CTAGS--------------
 set tags=tags
