@@ -95,7 +95,6 @@ map <C-l> <C-w>l
 "noremap <leader>f :CommandTFlush<CR>
 
 "------------CTRL-P-------------
-set wildignore+=*.class,*.jar
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_by_filename = 1
 let g:ctrlp_match_window_reversed = 0
@@ -109,6 +108,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
   \ 'file': '\.exe$\|\.so$\|\.dat$|\.class$'
   \ }
+set wildignore+=*/tmp/*,*.class,*.git,*.swp,*.jar
 
 "------------CTAGS--------------
 set tags=tags

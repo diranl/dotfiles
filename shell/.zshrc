@@ -9,14 +9,15 @@
 # Date in white, host in magenta, directory in default, prompt character
 # Example:   
 #     1J 23:06:26 ig:~ >
-PS1=$'%F{yel}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
+PS1=$'%F{g}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
 
 # Aliases
-alias 'ls=ls -G'
-alias 'l=ls'
-alias 'la=ls -A'
-alias 'll=ls -l'
-alias 'grep=grep --colour'
+alias ls='ls --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -l'
+alias grep='grep --colour'
+alias ifind='find . -iname $1'
 
 #Safe bet
 #alias 'rm=rm -i'
