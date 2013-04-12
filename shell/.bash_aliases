@@ -1,6 +1,6 @@
 # Aliases 
 alias vi='vim'
-alias ls='ls --color=auto'
+alias ls='ls -G'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'

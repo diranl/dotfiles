@@ -12,7 +12,7 @@
 PS1=$'%F{g}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
 
 # Aliases
-alias ls='ls --color=auto'
+alias ls='ls -G'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -l'
@@ -217,6 +217,8 @@ bindkey '\eOD' backward-char
 
 bindkey -M viins 'jj' vi-cmd-mode
 bindkey -M vicmd 'u' undo
+
+bindkey -v
 
 # Rebind the insert key.  I really can't stand what it currently does.
 bindkey '\e[2~' overwrite-mode

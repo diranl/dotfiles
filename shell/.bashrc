@@ -26,5 +26,6 @@ PS1="\[\033[01;30m\][\@]\u:\[\033[00m\]\W\$ "
 
 export TERM="xterm-256color"
 export INPUTRC=~/.inputrc
+export JAVA_1_6_HOME=$(/usr/libexec/java_home)
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

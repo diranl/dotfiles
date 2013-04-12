@@ -37,3 +37,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "vim/bundle/coffeetags"]
+	path = vim/bundle/coffeetags
+	url = git@github.com:lukaszkorecki/CoffeeTags.git
