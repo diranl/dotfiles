@@ -279,3 +279,12 @@ setopt HIST_FIND_NO_DUPS
 #{{{ Env variables
 source .zprofile
 #}}}
+
+#{{{ 
+grepjs() { 
+  find . -name '*.js' -exec grep -nHri --color "$1" {} \; ; 
+}
+grepcoffee() { 
+  find . -name '*.coffee' -exec grep -nHri --color "$1" {} \; ; 
+}
+#}}}
