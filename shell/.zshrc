@@ -18,6 +18,7 @@ alias la='ls -A'
 alias ll='ls -l'
 alias grep='grep --colour'
 alias ifind='find . -iname $1'
+alias igrep='grep -nrif /dev/stdin . <<<'
 
 #Safe bet
 #alias 'rm=rm -i'
@@ -277,7 +278,7 @@ setopt HIST_FIND_NO_DUPS
 #}}}
 
 #{{{ Env variables
-source .zprofile
+source ~/.zprofile
 #}}}
 
 #{{{ 
