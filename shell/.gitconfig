@@ -12,7 +12,7 @@
 	cp = cherry-pick
 	last = log -1
 	hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
-  lol = log --graph --decorate --pretty=oneline --abrev-commit
-  lola = log --graph --decorate --pretty=oneline --abrev-commit --all
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [color]
 	ui = true
