@@ -19,14 +19,15 @@ alias ll='ls -l'
 alias grep='grep --colour'
 alias ifind='find . -iname $1'
 alias igrep='grep -nrif /dev/stdin . <<<'
+alias gitfr='git fetch && git rebase'
+alias gitac='git add -u && git commit --amend'
+alias text='open -a TextEdit'
 
 #Safe bet
 #alias 'rm=rm -i'
 #alias 'mv=mv -i'
 #alias 'cp=cp -i'
 
-# Autoload screen if we aren't in it.  (Thanks Fjord!)
-# if [[ $STY = '' ]] then screen -xR; fi
 
 #{{{ ZSH Modules
 
@@ -231,6 +232,10 @@ bindkey -M vicmd '!' edit-command-output
 
 # it's like, space AND completion.  Gnarlbot.
 bindkey -M viins ' ' magic-space
+
+# Fix backspace in search+vi mode
+bindkey "^?" backward-delete-char
+bindkey "^W" backward-kill-word 
 
 #}}}
 
