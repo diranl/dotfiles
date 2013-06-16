@@ -293,4 +293,7 @@ grepjs() {
 grepcoffee() { 
   find . -name '*.coffee' -exec grep -nHri --color "$1" {} \; ; 
 }
+fgrep() {
+  find . -name "$1" -exec grep -nHri --color "$2" {} \; ;
+}
 #}}}

@@ -1,18 +1,19 @@
 [user]
-	name = Diran Li
-	email = diranl@palantir.com
+  name = Diran Li
+  email = diranl@palantir.com
 [core]
-	ignorecase = true
+  ignorecase = true
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [alias]
-	co = checkout
-	st = status
-	sb = status -sb
-	cp = cherry-pick
-	last = log -1
-	hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
+  co = checkout
+  st = status
+  sb = status -sb
+  cp = cherry-pick
+  br = branch
+  last = log -1
+  hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [color]
-	ui = true
+  ui = true
