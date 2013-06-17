@@ -146,7 +146,7 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
 "------------CLOSETAG------------
-autocmd FileType html,handlebars,mako,xml let b:closetag_html_style=1
+autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1 
 autocmd FileType html,handlebars,mako,xml source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 if osys == "Cygwin\n"
