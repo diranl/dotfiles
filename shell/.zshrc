@@ -201,6 +201,11 @@ bindkey '^R' history-incremental-search-backward
 
 bindkey "\eOP" run-help
 
+# Open command line in text editor
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # oh wow!  This is killer...  try it!
 bindkey -M vicmd "q" push-line
 
