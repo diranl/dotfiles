@@ -25,6 +25,9 @@ set complete=.,w,b,u,t,i " Autocompletes
 " The default value is 1sec which feels like an eternity
 set timeoutlen=100
 
+" Cut and paste remembers original selection
+xnoremap p pgvy
+
 nnoremap <F2> :set nonumber!<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TagbarToggle<CR>
