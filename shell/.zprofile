@@ -3,6 +3,7 @@
 PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 PATH="/usr/local/share/python:$PATH"
 PATH="/usr/local/share/npm/bin:$PATH"
+PATH="~/tools/trails/bin/unix:$PATH"
 export PATH
 export TERM="xterm-256color"
 export JAVA_1_6_HOME=$(/usr/libexec/java_home)

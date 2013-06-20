@@ -160,6 +160,9 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode     " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:Powerline_colorscheme = 'solarized256'
 
+"------------NERDTREE------------
+nnoremap <F5> :NERDTreeFind<CR>
+
 "------------FILE TYPES------------
 if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default

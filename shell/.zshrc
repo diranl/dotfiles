@@ -23,11 +23,6 @@ alias gitfr='git fetch && git rebase'
 alias gitac='git add -u && git commit --amend'
 alias text='open -a TextEdit'
 
-#Safe bet
-#alias 'rm=rm -i'
-#alias 'mv=mv -i'
-#alias 'cp=cp -i'
-
 
 #{{{ ZSH Modules
 
