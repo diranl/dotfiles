@@ -15,5 +15,6 @@
   hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  cr = "!git push origin HEAD:`git config branch.$(git rev-parse --abbrev-ref HEAD).merge | sed 's/heads/for/'`"
 [color]
   ui = true

@@ -77,7 +77,7 @@ setopt VI
 export EDITOR="vi"
 
 
-setopt IGNORE_EOF
+# setopt IGNORE_EOF
 
 # If I could disable Ctrl-s completely I would!
 setopt NO_FLOW_CONTROL
