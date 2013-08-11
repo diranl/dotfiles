@@ -57,6 +57,10 @@ ca tn tabnew
 noremap <S-j> gT<CR>
 noremap <S-k> gt<CR>
 
+"------------Fugitive Vim diff-----------
+noremap <leader>2 :diffget 2<CR> :diffupdate<CR>
+noremap <leader>3 :diffget 3<CR> :diffupdate<CR>
+
 "------------SEARCH------------
 set ignorecase  " Case insensitive search
 set smartcase 

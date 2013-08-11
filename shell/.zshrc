@@ -12,6 +12,7 @@
 PS1=$'%F{g}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
 
 # Aliases
+alias vi='vim'
 alias ls='ls -G'
 alias l='ls -CF'
 alias la='ls -A'
@@ -22,6 +23,8 @@ alias igrep='grep -nrif /dev/stdin . <<<'
 alias gitfr='git fetch && git rebase'
 alias gitac='git add -u && git commit --amend'
 alias text='open -a TextEdit'
+alias cdcode33='/Users/diranl/code/code33'
+alias cdtesora='/Users/diranl/code/usageanalytics'
 
 
 #{{{ ZSH Modules
@@ -62,9 +65,6 @@ setopt PUSHD_TO_HOME
 
 # this will ignore multiple directories for the stack.  Useful?  I dunno.
 setopt PUSHD_IGNORE_DUPS
-
-# 10 second wait if you do something that will delete everything.  I wish I'd had this before...
-setopt RM_STAR_WAIT
 
 # use magic (this is default, but it can't hurt!)
 setopt ZLE

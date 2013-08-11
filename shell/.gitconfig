@@ -18,3 +18,7 @@
   cr = "!git push origin HEAD:`git config branch.$(git rev-parse --abbrev-ref HEAD).merge | sed 's/heads/for/'`"
 [color]
   ui = true
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[merge]
+	tool = fugitive
