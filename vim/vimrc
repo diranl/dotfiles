@@ -126,16 +126,8 @@ let g:tagbar_usearrows = 1
 "------------GVIM---------------
 let osys = system("uname -o")
 if has('gui_running') 
-    set guioptions=  " Removes: toolbar, scrollbar, taskbar
-    if osys == "windows"
-      set guifont=Courier_New:h11
-      " Copy paste
-      vmap <A-c> "*y 
-      map <A-v> "*p
-      set tabstop=4
-      set shiftwidth=4
-      set tags="C:\tags"
-    endif
+  set guioptions=  " Removes: toolbar, scrollbar, taskbar
+  set guifont=Monaco:h12
 endif
 
 "------------SUPERTABS-----------
