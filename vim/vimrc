@@ -109,10 +109,10 @@ let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cache_dir="/tmp/ctrlp"
 let g:ctrlp_clear_cache_on_exit=0
 " Sane Ignore For ctrlp
-"let g:ctrlp_custom_ignore = {
-"  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp$',
-"  \ 'file': '\.exe$\|\.so$\|\.dat$|\.class$'
-"  \ }
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|ecbuild$\|compiler_cache$',
+  \ 'file': '\.exe$\|\.so$\|\.dat$|\.class$'
+  \ }
 set wildignore+=*/tmp/*,*.class,*.git,*.swp,*.jar
 
 noremap <C-b> :CtrlPBuffer<CR>
@@ -170,6 +170,7 @@ if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
 autocmd BufNewFile,BufRead *.less set ft=css
+autocmd BufNewFile,BufRead *.coffee_bare set ft=coffee
 autocmd FileType java set tabstop=4|set shiftwidth=4
 
 if executable('coffeetags')

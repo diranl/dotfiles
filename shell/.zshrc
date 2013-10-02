@@ -24,7 +24,9 @@ alias gitfr='git fetch && git rebase'
 alias gitac='git add -u && git commit --amend'
 alias text='open -a TextEdit'
 alias cdcode33='/Users/diranl/code/code33'
-alias cdtesora='/Users/diranl/code/usageanalytics'
+alias cdua='/Users/diranl/code/usageanalytics'
+alias cdpdm='/Users/diranl/code/pdm'
+alias buildall='./gradlew clean cleanEclipse build eclipse -parallel-threads 8'
 
 
 #{{{ ZSH Modules
