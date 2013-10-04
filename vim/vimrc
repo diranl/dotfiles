@@ -62,7 +62,8 @@ noremap <leader>2 :diffget 2<CR> :diffupdate<CR>
 noremap <leader>3 :diffget 3<CR> :diffupdate<CR>
 
 "------------GREP--------------
-nnoremap <F6> :silent Ggrep <cword> <CR> :redraw!<CR>
+nnoremap <C-G> :silent Ggrep <cword> <CR> :redraw!<CR>
+vnoremap <C-G> "hy:silent Ggrep "<C-r>h" <CR> :redraw!<CR>
 autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfix window as opposed to std out
 
 "------------JSON-------------
