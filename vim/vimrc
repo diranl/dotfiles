@@ -7,7 +7,7 @@ syntax enable
 
 set noswapfile " No need of .swap files with good backup systems
 
-set nolazyredraw " No redrawing while executing macros
+set lazyredraw " No redrawing while executing macros
 
 let mapleader = ","
 
@@ -60,6 +60,13 @@ noremap <S-k> gt<CR>
 "------------Fugitive Vim diff-----------
 noremap <leader>2 :diffget 2<CR> :diffupdate<CR>
 noremap <leader>3 :diffget 3<CR> :diffupdate<CR>
+
+"------------GREP--------------
+nnoremap <F6> :silent Ggrep <cword> <CR> :redraw!<CR>
+autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfix window as opposed to std out
+
+"------------JSON-------------
+ca json %!python -m json.tool
 
 "------------SEARCH------------
 set ignorecase  " Case insensitive search
