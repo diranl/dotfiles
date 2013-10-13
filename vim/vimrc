@@ -66,8 +66,16 @@ nnoremap <C-G> :silent Ggrep <cword> <CR> :redraw!<CR>
 vnoremap <C-G> "hy:silent Ggrep "<C-r>h" <CR> :redraw!<CR>
 autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfix window as opposed to std out
 
-"------------JSON-------------
+"------------HELPER FUNCTIONS-----
+function! Html()
+  :normal ggVGgJ
+  :%s/>\s*</>\r</g
+  :normal ggVG=
+endfunction
+
+"------------PRETTIFY-------------
 ca json %!python -m json.tool
+ca html call Html()<CR>
 
 "------------SEARCH------------
 set ignorecase  " Case insensitive search
