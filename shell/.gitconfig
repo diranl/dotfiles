@@ -16,6 +16,7 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   cr = "!git push origin HEAD:`git config branch.$(git rev-parse --abbrev-ref HEAD).merge | sed 's/heads/for/'`"
+  publish = "!git push origin HEAD:refs/heads/master ; git push --tags"
 [color]
   ui = true
 [mergetool "fugitive"]
