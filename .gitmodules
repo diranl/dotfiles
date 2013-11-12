@@ -55,3 +55,18 @@
 [submodule "vim/bundle/zoomwin"]
 	path = vim/bundle/zoomwin
 	url = git@github.com:regedarek/ZoomWin.git
+[submodule "vim/bundle/clang_complete"]
+	path = vim/bundle/clang_complete
+	url = git@github.com:Rip-Rip/clang_complete.git
+[submodule "vim/bundle/ultisnips"]
+	path = vim/bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "vim/bundle/vim-objc"]
+	path = vim/bundle/vim-objc
+	url = git@github.com:b4winckler/vim-objc.git
+[submodule "vim/bundle/vim-ios"]
+	path = vim/bundle/vim-ios
+	url = git@github.com:eraserhd/vim-ios.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
