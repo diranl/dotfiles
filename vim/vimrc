@@ -157,7 +157,7 @@ let g:syntastic_check_on_open = 1
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'java'] }
+                     \ 'passive_filetypes': ['html', 'java', 'objcpp'] }
 let g:syntastic_coffee_checkers = ['coffee', 'coffeelint']
 let g:syntastic_coffee_coffeelint_args = "--csv --file /Users/diran/coffeelint.json"
 let g:syntastic_enable_signs=1
@@ -187,6 +187,7 @@ if osys == "Cygwin\n"
 endif
 autocmd BufNewFile,BufRead *.less set ft=css
 autocmd BufNewFile,BufRead *.coffee_bare set ft=coffee
+autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
 
 if executable('coffeetags')

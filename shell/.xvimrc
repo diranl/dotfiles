@@ -1,0 +1,5 @@
+"------------SEARCH------------
+set ignorecase  " Case insensitive search
+set smartcase 
+set incsearch   " Incremental search
+
