@@ -73,6 +73,3 @@
 [submodule "vim/bundle/cocoa"]
 	path = vim/bundle/cocoa
 	url = git@github.com:msanders/cocoa.vim.git
-[submodule "vim-trailing-whitespace"]
-	path = vim-trailing-whitespace
-	url = git@github.com:bronson/vim-trailing-whitespace.git
