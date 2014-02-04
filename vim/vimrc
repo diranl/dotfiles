@@ -11,8 +11,6 @@ set lazyredraw " No redrawing while executing macros
 
 let mapleader = ","
 
-nnoremap <silent> <C-i> :noh<CR> " Remove hilighting
-
 " resize vertical split window
 nmap <C-Up> <C-w>>
 nmap <C-Down> <C-w><
@@ -75,7 +73,7 @@ endfunction
 
 "------------PRETTIFY-------------
 ca json %!python -m json.tool
-ca html call Html()<CR>
+"ca html call Html()<CR>
 
 "------------SEARCH------------
 set ignorecase  " Case insensitive search

@@ -23,3 +23,5 @@
 	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
 	tool = fugitive
+[difftool]
+  prompt = false
