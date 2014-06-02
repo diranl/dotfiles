@@ -40,7 +40,7 @@ let g:solarized_visibility="high"
 colorscheme solarized
 
 " Wildmenu
-highlight WildMenu ctermfg=green guifg=green 
+highlight WildMenu ctermfg=green guifg=green
 
 " Feature display
 set nonumber " Not show line numbers (initially)
@@ -48,7 +48,7 @@ set ruler " (Bottom-right) Show line/col position
 set ls=2 " (Bottom) path/filename + ruler
 set cursorline " Highlight current line
 set mouse=a   " Enable mouse selection
-set wildmenu " (Bottom) Enable menu selection 
+set wildmenu " (Bottom) Enable menu selection
 
 "------------Vim tabs-----------
 ca tn tabnew
@@ -77,10 +77,10 @@ ca json %!python -m json.tool
 
 "------------SEARCH------------
 set ignorecase  " Case insensitive search
-set smartcase 
+set smartcase
 set incsearch   " Incremental search
 set hlsearch
-" Search and replace 
+" Search and replace
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 "------------INDENTATION-------
@@ -139,7 +139,7 @@ nnoremap <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 let g:tagbar_usearrows = 1
 "------------GVIM---------------
 let osys = system("uname -o")
-if has('gui_running') 
+if has('gui_running')
   set guioptions=  " Removes: toolbar, scrollbar, taskbar
   set guifont=Monaco:h12
 endif
@@ -163,7 +163,7 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
 "------------CLOSETAG------------
-autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1 
+autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1
 autocmd FileType html,handlebars,mako,xml source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 "------------POWERLINE------------

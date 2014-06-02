@@ -1,6 +1,6 @@
 [user]
-  name = Diran Li
-  email = diranl@palantir.com
+	name = Diran Li
+	email = diranl@palantir.com
 [core]
   ignorecase = true
 [branch]
