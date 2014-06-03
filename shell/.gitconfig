@@ -1,8 +1,9 @@
 [user]
-	name = Diran Li
-	email = diranl@palantir.com
+  name = Diran Li
+  email = diranl@palantir.com
 [core]
   ignorecase = true
+  editor = /usr/bin/vim
 [branch]
   autosetuprebase = always
 [alias]
@@ -20,8 +21,8 @@
 [color]
   ui = true
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
-	tool = fugitive
+  tool = fugitive
 [difftool]
   prompt = false
