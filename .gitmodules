@@ -82,3 +82,6 @@
 [submodule "vim/bundle/conque-gdb"]
 	path = vim/bundle/conque-gdb
 	url = git@github.com:vim-scripts/Conque-GDB.git
+[submodule "vim/bundle/vimpdb"]
+	path = vim/bundle/vimpdb
+	url = git@github.com:gotcha/vimpdb.git
