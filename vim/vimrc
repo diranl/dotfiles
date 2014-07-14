@@ -72,7 +72,7 @@ function! Html()
 endfunction
 
 "------------PRETTIFY-------------
-ca json %!python -m json.tool
+"ca json %!python -m json.tool
 "ca html call Html()<CR>
 
 "------------SEARCH------------
@@ -187,6 +187,7 @@ autocmd BufNewFile,BufRead *.less set ft=css
 autocmd BufNewFile,BufRead *.coffee_bare set ft=coffee
 autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
+autocmd FileType coffee set tabstop=2|set shiftwidth=2
 
 if executable('coffeetags')
   let g:tagbar_type_coffee = {

@@ -111,6 +111,10 @@ HELPDIR=~/zsh_help
 
 bindkey -M viins '\C-i' complete-word
 
+# Backwards tab autocomplete
+bindkey '^[[Z' reverse-menu-complete
+
+
 # Faster! (?)
 zstyle ':completion::complete:*' use-cache 1
 
