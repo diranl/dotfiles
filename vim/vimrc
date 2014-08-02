@@ -129,7 +129,12 @@ let g:ctrlp_custom_ignore = {
   \ }
 set wildignore+=*/tmp/*,*.class,*.git,*.swp,*.jar
 
-noremap <C-b> :CtrlPBuffer<CR>
+"----Extensions----
+let g:ctrlp_extensions = ['funky']
+let g:ctrlp_funky_syntax_highlight = 1
+noremap <C-B> :CtrlPFunky<CR>
+" narrow the list down with a word under cursor
+nnoremap <C-T> :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
 "------------CTAGS--------------
 set tags=tags

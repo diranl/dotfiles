@@ -85,3 +85,6 @@
 [submodule "vim/bundle/vimpdb"]
 	path = vim/bundle/vimpdb
 	url = git@github.com:gotcha/vimpdb.git
+[submodule "vim/bundle/ctrlp-funky"]
+	path = vim/bundle/ctrlp-funky
+	url = git@github.com:tacahiroy/ctrlp-funky.git
