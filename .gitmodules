@@ -88,3 +88,6 @@
 [submodule "vim/bundle/ctrlp-funky"]
 	path = vim/bundle/ctrlp-funky
 	url = git@github.com:tacahiroy/ctrlp-funky.git
+[submodule "vim/bundle/splice"]
+	path = vim/bundle/splice
+	url = https://github.com/sjl/splice.vim.git
