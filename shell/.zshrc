@@ -7,11 +7,14 @@
 # Exit status indicator in red (if not 0)
 # Job count in yellow (if not 0)
 # Date in white, host in magenta, directory in default, prompt character
-# Example:   
+# Example:
 #     1J 23:06:26 ig:~ >
 PS1=$'%F{g}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
 
 #{{{ Env variables
+#export ALMANAC_ACCESS_ID=B0XZ2DE3GEC4HHCC8F7R
+#export ALMANAC_SECRET_KEY=sZxo3Q6FdhqpQOnG8tn5wuXgKsnCVqrnmg9YLPk0
+
 source ~/.zaliases
 #}}}
 
@@ -114,6 +117,11 @@ bindkey -M viins '\C-i' complete-word
 # Backwards tab autocomplete
 bindkey '^[[Z' reverse-menu-complete
 
+# History - pull up previous command with same prefix
+bindkey '\eOA' history-beginning-search-backward
+bindkey '\eOB' history-beginning-search-forward
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
 
 # Faster! (?)
 zstyle ':completion::complete:*' use-cache 1
@@ -197,12 +205,6 @@ bindkey -M vicmd v edit-command-line
 bindkey -M vicmd "q" push-line
 
 # Ensure that arrow keys work as they should
-bindkey '\e[A' up-line-or-history
-bindkey '\e[B' down-line-or-history
-
-bindkey '\eOA' up-line-or-history
-bindkey '\eOB' down-line-or-history
-
 bindkey '\e[C' forward-char
 bindkey '\e[D' backward-char
 
@@ -227,7 +229,7 @@ bindkey -M viins ' ' magic-space
 
 # Fix backspace in search+vi mode
 bindkey "^?" backward-delete-char
-bindkey "^W" backward-kill-word 
+bindkey "^W" backward-kill-word
 
 #}}}
 
@@ -278,12 +280,12 @@ setopt HIST_FIND_NO_DUPS
 source ~/.zprofile
 #}}}
 
-#{{{ 
-grepjs() { 
-  find . -name '*.js' -exec grep -nHri --color "$1" {} \; ; 
+#{{{
+grepjs() {
+  find . -name '*.js' -exec grep -nHri --color "$1" {} \; ;
 }
-grepcoffee() { 
-  find . -name '*.coffee' -exec grep -nHri --color "$1" {} \; ; 
+grepcoffee() {
+  find . -name '*.coffee' -exec grep -nHri --color "$1" {} \; ;
 }
 fgrep() {
   find . -name "$1" -exec grep -nHri --color "$2" {} \; ;

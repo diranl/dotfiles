@@ -3,3 +3,4 @@
 #######################################
 
 set vertical-split = no
+set ignore-case = yes

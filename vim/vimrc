@@ -82,6 +82,7 @@ set incsearch   " Incremental search
 set hlsearch
 " Search and replace
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+vnoremap <C-e> "hy:bufdo %s/<C-r>h//gc\|update<left><left><left><left><left><left><left><left><left><left>
 
 "------------INDENTATION-------
 set autoindent
@@ -160,7 +161,7 @@ let g:syntastic_check_on_open = 1
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'java', 'objcpp'] }
+                     \ 'passive_filetypes': ['html', 'java', 'objcpp', 'coffee'] }
 let g:syntastic_coffee_checkers = ['coffee', 'coffeelint']
 let g:syntastic_coffee_coffeelint_args = "--csv --file /Users/diran/coffeelint.json"
 let g:syntastic_enable_signs=1
@@ -189,23 +190,7 @@ if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
 autocmd BufNewFile,BufRead *.less set ft=css
-autocmd BufNewFile,BufRead *.coffee_bare set ft=coffee
+autocmd BufNewFile,BufRead *.coffee_bare,*.cjsx set ft=coffee
 autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
 autocmd FileType coffee set tabstop=2|set shiftwidth=2
-
-if executable('coffeetags')
-  let g:tagbar_type_coffee = {
-        \ 'ctagsbin' : 'coffeetags',
-        \ 'ctagsargs' : '',
-        \ 'kinds' : [
-        \ 'f:functions',
-        \ 'o:object',
-        \ ],
-        \ 'sro' : ".",
-        \ 'kind2scope' : {
-        \ 'f' : 'object',
-        \ 'o' : 'object',
-        \ }
-        \ }
-endif

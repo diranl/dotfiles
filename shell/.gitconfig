@@ -20,9 +20,16 @@
   publish = "!git push origin HEAD:refs/heads/master ; git push --tags"
 [color]
   ui = true
+[mergetool "splice"]
+  cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
+  trustExitCode = true
 [mergetool "fugitive"]
-  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = mvim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
-	tool = fugitive
+	tool = diffconflicts
 [difftool]
   prompt = false
+[mergetool "diffconflicts"]
+	cmd = diffconflicts mvim $BASE $LOCAL $REMOTE $MERGED
+	trustExitCode = true
+	keepBackup = false
