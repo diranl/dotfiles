@@ -9,6 +9,14 @@ set noswapfile " No need of .swap files with good backup systems
 
 set lazyredraw " No redrawing while executing macros
 
+set autoread   " Reload files changed outside of vim
+
+" enable matchit plugin which ships with vim and greatly enhances '%'
+runtime macros/matchit.vim
+
+" keep the cursor visible within 3 lines when scrolling
+set scrolloff=3
+
 let mapleader = ","
 
 " resize vertical split window
@@ -71,10 +79,14 @@ function! Html()
   :normal ggVG=
 endfunction
 
+function Location()
+  :echo expand('%:p')
+endfunction
+
 "------------PRETTIFY-------------
 "ca json %!python -m json.tool
 "ca html call Html()<CR>
-
+ca ghist Glog -p -- %
 "------------SEARCH------------
 set ignorecase  " Case insensitive search
 set smartcase
@@ -87,8 +99,8 @@ vnoremap <C-e> "hy:bufdo %s/<C-r>h//gc\|update<left><left><left><left><left><lef
 "------------INDENTATION-------
 set autoindent
 set smartindent
-"filetype on
-"filetype plugin on
+filetype on
+filetype plugin on
 filetype indent on
 
 "------------TABS--------------
