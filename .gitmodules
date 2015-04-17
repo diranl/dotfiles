@@ -1,96 +1,128 @@
 [submodule "vim/bundle/solarized"]
 	path = vim/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+  ignore = dirty
 [submodule "vim/bundle/fugitive"]
 	path = vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+  ignore = dirty
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+  ignore = dirty
 [submodule "vim/bundle/delmimate"]
 	path = vim/bundle/delmimate
 	url = git://github.com/Raimondi/delimitMate.git
+  ignore = dirty
 [submodule "vim/bundle/closetag"]
 	path = vim/bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
+  ignore = dirty
 [submodule "vim/bundle/pyflakes"]
 	path = vim/bundle/pyflakes
 	url = git://github.com/kevinw/pyflakes-vim.git
+  ignore = dirty
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+  ignore = dirty
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git@github.com:ervandew/supertab.git
+  ignore = dirty
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+  ignore = dirty
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+  ignore = dirty
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+  ignore = dirty
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
+  ignore = dirty
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+  ignore = dirty
 [submodule "vim/bundle/coffeetags"]
 	path = vim/bundle/coffeetags
 	url = git@github.com:lukaszkorecki/CoffeeTags.git
+  ignore = dirty
 [submodule "vim/bundle/mustache"]
 	path = vim/bundle/mustache
 	url = git://github.com/juvenn/mustache.vim.git
+  ignore = dirty
 [submodule "vim/bundle/vim-handlebars"]
 	path = vim/bundle/vim-handlebars
 	url = git@github.com:nono/vim-handlebars.git
+  ignore = dirty
 [submodule "vim/bundle/vim-powerline"]
 	path = vim/bundle/vim-powerline
 	url = git@github.com:Lokaltog/vim-powerline.git
+  ignore = dirty
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = git@github.com:sjl/gundo.vim.git
+  ignore = dirty
 [submodule "vim/bundle/zoomwin"]
 	path = vim/bundle/zoomwin
 	url = git@github.com:regedarek/ZoomWin.git
+  ignore = dirty
 [submodule "vim/bundle/clang_complete"]
 	path = vim/bundle/clang_complete
 	url = git@github.com:Rip-Rip/clang_complete.git
+  ignore = dirty
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
+  ignore = dirty
 [submodule "vim/bundle/vim-objc"]
 	path = vim/bundle/vim-objc
 	url = git@github.com:b4winckler/vim-objc.git
+  ignore = dirty
 [submodule "vim/bundle/vim-ios"]
 	path = vim/bundle/vim-ios
 	url = git@github.com:eraserhd/vim-ios.git
+  ignore = dirty
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+  ignore = dirty
 [submodule "vim/bundle/cocoa"]
 	path = vim/bundle/cocoa
 	url = git@github.com:msanders/cocoa.vim.git
+  ignore = dirty
 [submodule "vim/bundle/vim-trailing-whitespace"]
 	path = vim/bundle/vim-trailing-whitespace
 	url = git@github.com:bronson/vim-trailing-whitespace.git
+  ignore = dirty
 [submodule "vim/bundle/vim-gradle"]
 	path = vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle
+  ignore = dirty
 [submodule "vim/bundle/conque-gdb"]
 	path = vim/bundle/conque-gdb
 	url = git@github.com:vim-scripts/Conque-GDB.git
+  ignore = dirty
 [submodule "vim/bundle/vimpdb"]
 	path = vim/bundle/vimpdb
 	url = git@github.com:gotcha/vimpdb.git
+  ignore = dirty
 [submodule "vim/bundle/ctrlp-funky"]
 	path = vim/bundle/ctrlp-funky
 	url = git@github.com:tacahiroy/ctrlp-funky.git
+  ignore = dirty
 [submodule "vim/bundle/splice"]
 	path = vim/bundle/splice
 	url = https://github.com/sjl/splice.vim.git
+  ignore = dirty
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+  ignore = dirty
