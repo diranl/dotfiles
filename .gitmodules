@@ -126,3 +126,6 @@
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
   ignore = dirty
+[submodule "vim/bundle/easymotion"]
+	path = vim/bundle/easymotion
+	url = git@github.com:Lokaltog/vim-easymotion.git

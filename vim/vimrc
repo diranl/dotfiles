@@ -29,7 +29,7 @@ set complete=.,w,b,u,t,i " Autocompletes
 
 " Timeout used to wait btwn keystrokes for e.g. ESC+O
 " The default value is 1sec which feels like an eternity
-set timeoutlen=100
+set timeoutlen=200
 
 " Cut and paste remembers original selection
 xnoremap p pgvy
