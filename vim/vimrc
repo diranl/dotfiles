@@ -187,6 +187,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode     " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:Powerline_colorscheme = 'solarized256'
+"let g:Powerline_symbols = 'fancy'  " Show pretty icons
 
 "------------ZOOMWIN------------
 nnoremap + :ZoomWin<CR>
