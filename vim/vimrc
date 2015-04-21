@@ -162,9 +162,6 @@ if has('gui_running')
   set guifont=Monaco:h12
 endif
 
-"------------SUPERTABS-----------
-let g:SuperTabDefaultCompletionType = "context"
-
 "------------SYNTASTIC-----------
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_jump = 1
