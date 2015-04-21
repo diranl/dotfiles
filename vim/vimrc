@@ -204,3 +204,7 @@ autocmd BufNewFile,BufRead *.coffee_bare,*.cjsx set ft=coffee
 autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
 autocmd FileType coffee set tabstop=2|set shiftwidth=2
+
+" Automatically open folds
+autocmd FileType git setlocal foldmethod=syntax
+autocmd FileType git normal zR
