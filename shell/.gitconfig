@@ -4,7 +4,7 @@
 [core]
   ignorecase = true
   editor = /usr/bin/vim
-	autocrlf = false
+  autocrlf = false
 [branch]
   autosetuprebase = always
 [alias]
