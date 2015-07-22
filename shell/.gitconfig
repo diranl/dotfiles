@@ -4,6 +4,7 @@
 [core]
   ignorecase = true
   editor = /usr/bin/vim
+	autocrlf = false
 [branch]
   autosetuprebase = always
 [alias]
@@ -11,6 +12,7 @@
   st = status
   sb = status -sb
   cp = cherry-pick
+  cm = commit
   br = branch
   last = log -1
   hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
