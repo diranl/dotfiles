@@ -20,6 +20,7 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   cr = "!git push origin HEAD:`git config branch.$(git rev-parse --abbrev-ref HEAD).merge | sed 's/heads/for/'`"
   publish = "!git push origin HEAD:refs/heads/master ; git push --tags"
+  track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd; }; f"
 [color]
   ui = true
 [mergetool "fugitive"]

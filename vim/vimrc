@@ -38,6 +38,10 @@ nnoremap <F2> :set nonumber!<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TagbarToggle<CR>
 
+"------------BELL---------------
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 "------------DISPLAY------------
 " Colorscheme
 set background=dark
