@@ -141,3 +141,12 @@
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/bundle/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
+[submodule "vim/bundle/vimproc"]
+	path = vim/bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "vim/bundle/unite-outline"]
+	path = vim/bundle/unite-outline
+	url = https://github.com/Shougo/unite-outline.git
+[submodule "vim/bundle/unite"]
+	path = vim/bundle/unite
+	url = https://github.com/Shougo/unite.vim.git
