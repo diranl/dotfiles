@@ -18,10 +18,6 @@
 	path = vim/bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
   ignore = dirty
-[submodule "vim/bundle/pyflakes"]
-	path = vim/bundle/pyflakes
-	url = git://github.com/kevinw/pyflakes-vim.git
-  ignore = dirty
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
