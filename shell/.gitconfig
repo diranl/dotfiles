@@ -5,6 +5,7 @@
   ignorecase = true
   editor = /usr/bin/vim
   autocrlf = false
+	excludesfile = /Users/diranl/.gitignore_global
 [branch]
   autosetuprebase = always
 [alias]
@@ -14,13 +15,14 @@
   cp = cherry-pick
   cm = commit
   br = branch
+  rb = rebase
   last = log -1
   hlog = log --all --date-order --graph --format=\"%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s\"
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   cr = "!git push origin HEAD:`git config branch.$(git rev-parse --abbrev-ref HEAD).merge | sed 's/heads/for/'`"
   publish = "!git push origin HEAD:refs/heads/master ; git push --tags"
-  track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch --set-upstream $branch ${1:-origin}/${2:-$branch}\"; echo $cmd; $cmd; }; f"
+  track = "!f(){ branch=$(git name-rev --name-only HEAD); cmd=\"git branch -u ${1:-origin}/${2:-$branch} $branch\"; echo $cmd; $cmd; }; f"
 [color]
   ui = true
 [mergetool "fugitive"]
@@ -29,3 +31,9 @@
 	tool = fugitive
 [difftool]
   prompt = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

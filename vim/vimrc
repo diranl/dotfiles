@@ -141,7 +141,7 @@ let g:ctrlp_cache_dir="/tmp/ctrlp"
 let g:ctrlp_clear_cache_on_exit=0
 " Sane Ignore For ctrlp
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|ecbuild$\|bin$\|compiler_cache$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|build$\|ecbuild$\|bin$\|compiler_cache$\|bower_components$\|node_modules$',
   \ 'file': '\.exe$\|\.so$\|\.dat$|\.class$'
   \ }
 set wildignore+=*/tmp/*,*.class,*.git,*.swp,*.jar
