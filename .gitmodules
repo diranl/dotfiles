@@ -110,10 +110,6 @@
 	path = vim/bundle/ctrlp-funky
 	url = git@github.com:tacahiroy/ctrlp-funky.git
   ignore = dirty
-[submodule "vim/bundle/splice"]
-	path = vim/bundle/splice
-	url = https://github.com/sjl/splice.vim.git
-  ignore = dirty
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
