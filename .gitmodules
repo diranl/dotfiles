@@ -106,10 +106,6 @@
 	path = vim/bundle/vim-gradle
 	url = https://github.com/tfnico/vim-gradle
   ignore = dirty
-[submodule "vim/bundle/conque-gdb"]
-	path = vim/bundle/conque-gdb
-	url = git@github.com:vim-scripts/Conque-GDB.git
-  ignore = dirty
 [submodule "vim/bundle/vimpdb"]
 	path = vim/bundle/vimpdb
 	url = git@github.com:gotcha/vimpdb.git
