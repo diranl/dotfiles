@@ -291,4 +291,8 @@ grepcoffee() {
 fgrep() {
   find . -name "$1" -exec grep -nHri --color "$2" {} \; ;
 }
+ggrepf() {
+  git grep "$1" -- "$2"
+}
 #}}}
+source /usr/local/dev-env/bin/profile
