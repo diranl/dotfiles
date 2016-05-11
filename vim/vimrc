@@ -76,6 +76,10 @@ nnoremap <C-G> :silent Ggrep <cword> <CR> :redraw!<CR>
 vnoremap <C-G> "hy:silent Ggrep "<C-r>h" <CR> :redraw!<CR>
 autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfix window as opposed to std out
 
+"------------YOUCOMPLETEME--------------
+nnoremap <leader>d :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>r :YcmCompleter GoToReferences<CR>
+
 "------------HELPER FUNCTIONS-----
 function! Html()
   :normal ggVGgJ
@@ -149,7 +153,6 @@ set wildignore+=*/tmp/*,*.class,*.git,*.swp,*.jar
 "----Extensions----
 let g:ctrlp_extensions = ['funky']
 let g:ctrlp_funky_syntax_highlight = 1
-noremap <C-B> :CtrlPFunky<CR>
 " narrow the list down with a word under cursor
 nnoremap <C-T> :execute 'CtrlPFunky ' . expand('')<Cr>
 
@@ -191,7 +194,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode     " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:Powerline_colorscheme = 'solarized256'
-"let g:Powerline_symbols = 'fancy'  " Show pretty icons
+let g:Powerline_symbols = 'fancy'  " Show pretty icons
 
 "------------ZOOMWIN------------
 nnoremap + :ZoomWin<CR>
