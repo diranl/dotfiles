@@ -2,7 +2,7 @@
   name = Diran Li
   email = diranl@palantir.com
 [core]
-  ignorecase = true
+  ignorecase = false
   editor = /usr/bin/vim
   autocrlf = false
 	excludesfile = /Users/diranl/.gitignore_global
