@@ -79,6 +79,7 @@ autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfi
 "------------YOUCOMPLETEME--------------
 nnoremap <leader>d :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>r :YcmCompleter GoToReferences<CR>
+set runtimepath-=~/.vim/bundle/youcompleteme
 
 "------------HELPER FUNCTIONS-----
 function! Html()
