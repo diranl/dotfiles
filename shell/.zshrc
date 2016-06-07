@@ -14,7 +14,9 @@ PS1=$'%F{g}[%T]%F{m}%n:%F{white}%~%(!.#.>) %F{def}'
 #{{{ Env variables
 #export ALMANAC_ACCESS_ID=B0XZ2DE3GEC4HHCC8F7R
 #export ALMANAC_SECRET_KEY=sZxo3Q6FdhqpQOnG8tn5wuXgKsnCVqrnmg9YLPk0
-export CDPATH=/Volumes/git
+
+# Searches folders starting from set location
+# export CDPATH=/Volumes/git
 
 source ~/.zaliases
 #}}}
@@ -295,4 +297,4 @@ ggrepf() {
   git grep "$1" -- "$2"
 }
 #}}}
-source /usr/local/dev-env/bin/profile
+# source /usr/local/dev-env/bin/profile
