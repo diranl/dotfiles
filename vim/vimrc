@@ -211,7 +211,7 @@ autocmd BufNewFile,BufRead *.less set ft=css
 autocmd BufNewFile,BufRead *.coffee_bare,*.cjsx set ft=coffee
 autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
-autocmd FileType coffee set tabstop=2|set shiftwidth=2
+autocmd FileType coffee, yaml set tabstop=2|set shiftwidth=2
 autocmd FileType typescript set tabstop=4|set shiftwidth=4
 
 " Automatically open folds
