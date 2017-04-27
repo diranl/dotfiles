@@ -4,3 +4,4 @@
 
 set vertical-split = no
 set ignore-case = yes
+set main-view = line-number:no id:yes date:relative author:full commit-title:yes
