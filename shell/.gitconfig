@@ -1,6 +1,7 @@
 [user]
   name = Diran Li
-  email = diranl@palantir.com
+  email = diran.d.li@gmail.com
+	signingkey = 4C409251067E89B85A2293C8059CE4C74C66B0CA
 [core]
   ignorecase = false
   editor = /usr/bin/vim
@@ -41,3 +42,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[commit]
+	gpgsign = true

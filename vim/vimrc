@@ -178,9 +178,7 @@ let g:syntastic_check_on_open = 1
 
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'java', 'objcpp', 'coffee', 'typescript', 'rst'] }
-let g:syntastic_coffee_checkers = ['coffee', 'coffeelint']
-let g:syntastic_coffee_coffeelint_args = "--csv --file /Users/diran/coffeelint.json"
+                     \ 'passive_filetypes': ['html', 'java', 'objcpp', 'typescript', 'rst', 'python'] }
 let g:syntastic_enable_signs=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
@@ -195,7 +193,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode     " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:Powerline_colorscheme = 'solarized256'
-let g:Powerline_symbols = 'fancy'  " Show pretty icons
+" let g:Powerline_symbols = 'fancy'  " Show pretty icons
 
 "------------ZOOMWIN------------
 nnoremap + :ZoomWin<CR>
@@ -208,10 +206,9 @@ if osys == "Cygwin\n"
     autocmd BufNewFile,BufRead *.txt colorscheme default
 endif
 autocmd BufNewFile,BufRead *.less set ft=css
-autocmd BufNewFile,BufRead *.coffee_bare,*.cjsx set ft=coffee
 autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
-autocmd FileType coffee, yaml set tabstop=2|set shiftwidth=2
+autocmd FileType yaml set tabstop=2|set shiftwidth=2
 autocmd FileType typescript set tabstop=4|set shiftwidth=4
 
 " Automatically open folds

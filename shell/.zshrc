@@ -298,3 +298,9 @@ ggrepf() {
 }
 #}}}
 # source /usr/local/dev-env/bin/profile
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/diran/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/diran/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/diran/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/diran/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
