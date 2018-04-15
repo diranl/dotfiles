@@ -113,15 +113,9 @@
 [submodule "vim/bundle/deoplete.nvim"]
 	path = vim/bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
-[submodule "vim/bundle/autocomplete-flow"]
-	path = vim/bundle/autocomplete-flow
-	url = git@github.com:wokalski/autocomplete-flow.git
 [submodule "vim/bundle/neosnippet"]
 	path = vim/bundle/neosnippet
 	url = git@github.com:Shougo/neosnippet.vim.git
-[submodule "vim/bundle/vim-plug"]
-	path = vim/bundle/vim-plug
-	url = git@github.com:junegunn/vim-plug.git
 [submodule "vim/bundle/neosnippet-snippets"]
 	path = vim/bundle/neosnippet-snippets
 	url = git@github.com:Shougo/neosnippet-snippets.git
