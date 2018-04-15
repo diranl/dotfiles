@@ -166,6 +166,13 @@ if has('gui_running')
   set guifont=Monaco:h12
 endif
 
+"------------ALE------------
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+" Enable completion where available.
+let g:ale_completion_enabled = 1
+
 "------------CLOSETAG------------
 autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1
 autocmd FileType html,handlebars,mako,xml source ~/.vim/bundle/closetag/plugin/closetag.vim
@@ -187,6 +194,9 @@ nnoremap + :ZoomWin<CR>
 
 "------------NERDTREE------------
 nnoremap <F5> :NERDTreeFind<CR>
+
+"------------MACVIM------------
+set guifont=Meslo\ LG\ M\ regular\ for\ Powerline:h12
 
 "------------FILE TYPES------------
 if osys == "Cygwin\n"
