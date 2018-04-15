@@ -172,6 +172,9 @@ let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 " Enable completion where available.
 let g:ale_completion_enabled = 1
+" Only run ale on save
+let g:ale_lint_on_text_changed = 'never'
+let g:airline#extensions#ale#enabled = 1
 
 "------------CLOSETAG------------
 autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1
@@ -207,6 +210,11 @@ autocmd BufNewFile,BufRead *.h,*.m set ft=objcpp
 autocmd FileType java set tabstop=4|set shiftwidth=4
 autocmd FileType yaml set tabstop=2|set shiftwidth=2
 autocmd FileType typescript set tabstop=4|set shiftwidth=4
+
+" Prettier javascript
+" autocmd FileType javascript set formatprg=prettier\ --stdin
+" autocmd BufWritePre *.js :normal gggqG
+
 
 " Automatically open folds
 autocmd FileType git setlocal foldmethod=syntax
