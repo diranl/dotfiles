@@ -42,10 +42,6 @@
 	path = vim/bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
   ignore = dirty
-[submodule "vim/bundle/coffeetags"]
-	path = vim/bundle/coffeetags
-	url = git@github.com:lukaszkorecki/CoffeeTags.git
-  ignore = dirty
 [submodule "vim/bundle/mustache"]
 	path = vim/bundle/mustache
 	url = git://github.com/juvenn/mustache.vim.git
