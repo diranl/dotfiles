@@ -166,19 +166,6 @@ if has('gui_running')
   set guifont=Monaco:h12
 endif
 
-"------------SYNTASTIC-----------
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_jump = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-
-let g:syntastic_mode_map={ 'mode': 'active',
-                     \ 'active_filetypes': [],
-                     \ 'passive_filetypes': ['html', 'java', 'objcpp', 'typescript', 'rst', 'python'] }
-let g:syntastic_enable_signs=1
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-
 "------------CLOSETAG------------
 autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1
 autocmd FileType html,handlebars,mako,xml source ~/.vim/bundle/closetag/plugin/closetag.vim
