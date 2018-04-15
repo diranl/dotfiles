@@ -1,5 +1,5 @@
 # Aliases
-alias vi='vim'
+alias vi='nvim'
 alias ls='ls -G'
 alias l='ls -CF'
 alias la='ls -A'
