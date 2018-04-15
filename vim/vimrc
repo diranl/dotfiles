@@ -76,11 +76,6 @@ nnoremap <C-G> :silent Ggrep <cword> <CR> :redraw!<CR>
 vnoremap <C-G> "hy:silent Ggrep "<C-r>h" <CR> :redraw!<CR>
 autocmd QuickFixCmdPost *grep* cwindow " Displays grep results inside of quickfix window as opposed to std out
 
-"------------YOUCOMPLETEME--------------
-nnoremap <leader>d :YcmCompleter GoToDefinition<CR>
-nnoremap <leader>r :YcmCompleter GoToReferences<CR>
-set runtimepath-=~/.vim/bundle/youcompleteme
-
 "------------HELPER FUNCTIONS-----
 function! Html()
   :normal ggVGgJ

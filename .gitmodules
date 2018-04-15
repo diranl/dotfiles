@@ -92,9 +92,6 @@
 [submodule "vim/bundle/vim-tsx"]
 	path = vim/bundle/vim-tsx
 	url = git@github.com:ianks/vim-tsx.git
-[submodule "vim/bundle/youcompleteme"]
-	path = vim/bundle/youcompleteme
-	url = git@github.com:Valloric/YouCompleteMe.git
 [submodule "vim/bundle/tsuquyomi"]
 	path = vim/bundle/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
