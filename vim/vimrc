@@ -131,16 +131,12 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-"------------COMMAND-T----------
-"noremap <C-t> :CommandT<CR>
-"noremap <leader>f :CommandTFlush<CR>
-
 "------------CTRL-P-------------
 let g:ctrlp_max_files=1000000
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_by_filename = 1
 let g:ctrlp_match_window_reversed = 0
-"let g:ctrlp_mruf_include = '\.py$\|\.rb$|\.cpp$|\.cc$|\.h$|\.java$|\.coffee$|\.less$|\.handlebar$|\.js$'
+"let g:ctrlp_mruf_include = '\.py$\|\.rb$|\.cpp$|\.cc$|\.h$|\.java$|\.less$|\.handlebar$|\.js$'
 let g:ctrlp_map = '<c-f>'
 let g:ctrlp_cache_dir="/tmp/ctrlp"
 let g:ctrlp_clear_cache_on_exit=0
