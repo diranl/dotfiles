@@ -171,6 +171,9 @@ let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:airline#extensions#ale#enabled = 1
 
+"------------JAVASCRIPT------------
+let g:jsx_ext_required = 0
+
 "------------CLOSETAG------------
 autocmd FileType html,handlebars,mako,xml let g:closetag_html_style=1
 autocmd FileType html,handlebars,mako,xml source ~/.vim/bundle/closetag/plugin/closetag.vim
@@ -216,8 +219,14 @@ autocmd FileType yaml set tabstop=2|set shiftwidth=2
 autocmd FileType typescript set tabstop=4|set shiftwidth=4
 
 " Prettier javascript
-" autocmd FileType javascript set formatprg=prettier\ --stdin
-" autocmd BufWritePre *.js :normal gggqG
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+" print spaces between brackets
+" Prettier default: true
+let g:prettier#config#bracket_spacing = 'true'
+" avoid|always
+" Prettier default: avoid
+let g:prettier#config#arrow_parens = 'always'
 
 
 " Automatically open folds
