@@ -137,3 +137,6 @@
 [submodule "vim/bundle/tern_for_vim"]
 	path = vim/bundle/tern_for_vim
 	url = git@github.com:ternjs/tern_for_vim.git
+[submodule "vim/bundle/vim-better-javascript-completion"]
+	path = vim/bundle/vim-better-javascript-completion
+	url = git@github.com:1995eaton/vim-better-javascript-completion.git
