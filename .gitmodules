@@ -134,3 +134,6 @@
 [submodule "vim/bundle/deoplete-ternjs"]
 	path = vim/bundle/deoplete-ternjs
 	url = git@github.com:carlitux/deoplete-ternjs.git
+[submodule "vim/bundle/tern_for_vim"]
+	path = vim/bundle/tern_for_vim
+	url = git@github.com:ternjs/tern_for_vim.git
