@@ -131,3 +131,6 @@
 [submodule "vim/bundle/vim-prettier"]
 	path = vim/bundle/vim-prettier
 	url = git@github.com:prettier/vim-prettier.git
+[submodule "vim/bundle/deoplete-ternjs"]
+	path = vim/bundle/deoplete-ternjs
+	url = git@github.com:carlitux/deoplete-ternjs.git
