@@ -199,9 +199,6 @@ smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
-"------------ZOOMWIN------------
-nnoremap + :ZoomWin<CR>
-
 "------------NERDTREE------------
 nnoremap <F5> :NERDTreeFind<CR>
 

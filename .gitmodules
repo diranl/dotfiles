@@ -34,10 +34,6 @@
 	path = vim/bundle/gundo
 	url = git@github.com:sjl/gundo.vim.git
   ignore = dirty
-[submodule "vim/bundle/zoomwin"]
-	path = vim/bundle/zoomwin
-	url = git@github.com:regedarek/ZoomWin.git
-  ignore = dirty
 [submodule "vim/bundle/clang_complete"]
 	path = vim/bundle/clang_complete
 	url = git@github.com:Rip-Rip/clang_complete.git
@@ -82,12 +78,6 @@
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/bundle/vim-commentary
 	url = git@github.com:tpope/vim-commentary.git
-[submodule "vim/bundle/vimproc"]
-	path = vim/bundle/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "vim/bundle/vim-tsx"]
-	path = vim/bundle/vim-tsx
-	url = git@github.com:ianks/vim-tsx.git
 [submodule "vim/bundle/tsuquyomi"]
 	path = vim/bundle/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
@@ -136,6 +126,3 @@
 [submodule "vim/bundle/vim-better-javascript-completion"]
 	path = vim/bundle/vim-better-javascript-completion
 	url = git@github.com:1995eaton/vim-better-javascript-completion.git
-[submodule "vim/bundle/vim-snippets"]
-	path = vim/bundle/vim-snippets
-	url = git@github.com:honza/vim-snippets.git
