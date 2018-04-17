@@ -6,10 +6,6 @@
 	path = vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
   ignore = dirty
-[submodule "vim/bundle/delmimate"]
-	path = vim/bundle/delmimate
-	url = git://github.com/Raimondi/delimitMate.git
-  ignore = dirty
 [submodule "vim/bundle/closetag"]
 	path = vim/bundle/closetag
 	url = git://github.com/docunext/closetag.vim.git
