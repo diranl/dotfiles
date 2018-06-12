@@ -126,3 +126,6 @@
 [submodule "vim/bundle/vim-better-javascript-completion"]
 	path = vim/bundle/vim-better-javascript-completion
 	url = git@github.com:1995eaton/vim-better-javascript-completion.git
+[submodule "vim/bundle/vim-sort-imports"]
+	path = vim/bundle/vim-sort-imports
+	url = git@github.com:ruanyl/vim-sort-imports.git
