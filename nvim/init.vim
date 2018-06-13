@@ -15,6 +15,8 @@ let g:python3_host_prog = '/git/miniconda3/bin/python3'
 
 " call plug#begin()
 
+" Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
+
 " function! DoRemote(arg)
 "   UpdateRemotePlugins
 " endfunction
@@ -37,6 +39,8 @@ let g:python3_host_prog = '/git/miniconda3/bin/python3'
 " call plug#end()
 
 let g:deoplete#enable_at_startup = 1
+autocmd FileType typescript call deoplete#disable()
+
 let g:deoplete#enable_ignore_case = 1
 let g:deoplete#enable_smart_case = 1
 let g:deoplete#enable_camel_case = 1
@@ -49,3 +53,4 @@ let g:tern_request_timeout = 6000
 let g:tern#command = ["tern"]
 let g:tern#arguments = ["--persistent"]
 let g:deoplete#sources#tss#javascript_support = 1
+
