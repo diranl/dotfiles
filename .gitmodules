@@ -129,3 +129,6 @@
 [submodule "vim/bundle/vim-sort-imports"]
 	path = vim/bundle/vim-sort-imports
 	url = git@github.com:ruanyl/vim-sort-imports.git
+[submodule "vim/bundle/vim-solidity"]
+	path = vim/bundle/vim-solidity
+	url = git@github.com:tomlion/vim-solidity.git
