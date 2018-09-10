@@ -3,6 +3,7 @@
 PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 PATH="/usr/local/share/npm/bin:$PATH"
 PATH="/git/miniconda3/bin:$PATH"
+PATH=~/.local/bin:$PATH
 export PATH
 export TERM="xterm-256color"
 export JAVA_1_6_HOME=$(/usr/libexec/java_home)
