@@ -19,17 +19,15 @@ options     head
 snippet     nsfc
 abbr        class extends React.Component<WithStyles<>> {...}
 options     head
-  import * as React from 'react';
   import { WithStyles, withStyles } from '@material-ui/core/styles';
+  import * as React from 'react';
 
   const styles = (theme) => ({
     container: {}
   });
 
-  class ${1:#:NAME} extends React.Component<WithStyles<'container'>> {
-    public render() {
+  const ${1:#:NAME}: React.SFC<WithStyles<'container'>> = ({ classes }) => {
       return null;
-    }
   }
 
   export default withStyles(styles as any)(${2:#:NAME});
