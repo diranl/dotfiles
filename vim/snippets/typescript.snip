@@ -2,9 +2,9 @@ snippet     nclass
 abbr        class extends React.Component<WithStyles<>> {...}
 options     head
   import * as React from 'react';
-  import { WithStyles, withStyles } from '@material-ui/core/styles';
+  import { Theme, WithStyles, withStyles } from '@material-ui/core/styles';
 
-  const styles = (theme) => ({
+  const styles = (theme: Theme) => ({
     container: {}
   });
 
@@ -19,10 +19,10 @@ options     head
 snippet     nsfc
 abbr        class extends React.Component<WithStyles<>> {...}
 options     head
-  import { WithStyles, withStyles } from '@material-ui/core/styles';
+  import { Theme, WithStyles, withStyles } from '@material-ui/core/styles';
   import * as React from 'react';
 
-  const styles = (theme) => ({
+  const styles = (theme: Theme) => ({
     container: {}
   });
 
