@@ -17,7 +17,7 @@ options     head
   export default withStyles(styles)(${2:#:NAME});
 
 snippet     nsfc
-abbr        class extends React.Component<WithStyles<>> {...}
+abbr        const {...} React.SFC<WithStyles<typeof styles>> {...}
 options     head
   import { Theme, WithStyles, withStyles } from '@material-ui/core/styles';
   import * as React from 'react';
@@ -31,3 +31,14 @@ options     head
   }
 
   export default withStyles(styles)(${2:#:NAME});
+
+snippet     bsfc
+abbr        const {...}: React.SFC<{...} & WithStyles
+options     head
+  interface ${1:#:NAME} {
+    ${2:#:TARGET}
+  }
+
+  const ${3:#:NAME}: React.SFC<${4:#:NAME} & WithStyles<typeof styles>> = ({ classes }) => {
+      return null;
+  }
