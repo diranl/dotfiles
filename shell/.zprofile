@@ -13,3 +13,17 @@ export PATH="$GOPATH/bin:$PATH"
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/diran/.gcloud/keys/Libri-god.json"
 export GPG_TTY=$(tty)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Meridian
+export AGORA_DB=
+export KAIKO_API_KEY=
+export MERIDIAN_DB=
+export MESSARI_DB=
+export SENTRY_DSN=
