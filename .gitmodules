@@ -125,3 +125,6 @@
 [submodule "vim/bundle/vim-solidity"]
 	path = vim/bundle/vim-solidity
 	url = git@github.com:tomlion/vim-solidity.git
+[submodule "vim/bundle/vim-closetag"]
+	path = vim/bundle/vim-closetag
+	url = git@github.com:alvan/vim-closetag.git
