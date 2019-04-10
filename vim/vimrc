@@ -182,8 +182,6 @@ let g:import_sort_auto = 1
 let g:jsx_ext_required = 0
 
 "------------CLOSETAG------------
-autocmd FileType html,handlebars,mako,xml,typescript,jsx let g:closetag_html_style=1
-autocmd FileType html,handlebars,mako,xml,typescript,jsx source ~/.vim/bundle/closetag/plugin/closetag.vim
 " filetypes like xml, html, xhtml, ...
 " filetypes like xml, html, xhtml, ...
 " These are the file types where this plugin is enabled.
