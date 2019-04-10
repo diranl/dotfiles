@@ -211,6 +211,11 @@ let g:neosnippet#snippets_directory='~/.vim/snippets'
 "------------NERDTREE------------
 nnoremap <F5> :NERDTreeFind<CR>
 
+"------------GITGUTTER------------
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hr <Plug>GitGutterUndoHunk
+
+
 "------------MACVIM------------
 set guifont=Meslo\ LG\ M\ regular\ for\ Powerline:h12
 
