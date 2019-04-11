@@ -229,6 +229,7 @@ nnoremap <F5> :NERDTreeFind<CR>
 "------------GITGUTTER------------
 nmap <Leader>ha <Plug>GitGutterStageHunk
 nmap <Leader>hr <Plug>GitGutterUndoHunk
+autocmd BufWritePost * GitGutter
 
 
 "------------MACVIM------------
