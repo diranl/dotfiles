@@ -32,13 +32,26 @@ options     head
 
   export default withStyles(styles)(${2:#:NAME});
 
-snippet     bsfc
-abbr        const {...}: React.SFC<{...} & WithStyles
+snippet     jsfc
+abbr        const {...}: React.SFC<{...}> { ... }
 options     head
   interface ${1:#:NAME} {
     ${2:#:TARGET}
   }
 
-  const ${3:#:NAME}: React.SFC<${4:#:NAME} & WithStyles<typeof styles>> = ({ ${5:#:NAME}, classes }) => {
+  const ${3:#:NAME}: React.SFC<${4:#:NAME}> = ({ ${5:#:NAME} }) => {
       return null;
+  }
+
+snippet     jclass
+abbr        class extends React.Component<{...}> {...}
+options     head
+  interface ${1:#:NAME} {
+    ${2:#:TARGET}
+  }
+
+  class ${3:#:NAME} extends React.Component<${1:#:NAME}> {
+    public render() {
+      return null;
+    }
   }
