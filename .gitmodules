@@ -128,3 +128,6 @@
 [submodule "vim/bundle/vim-closetag"]
 	path = vim/bundle/vim-closetag
 	url = git@github.com:alvan/vim-closetag.git
+[submodule "vim/bundle/vim-swap"]
+	path = vim/bundle/vim-swap
+	url = git@github.com:machakann/vim-swap.git
