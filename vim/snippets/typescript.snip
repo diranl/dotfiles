@@ -55,3 +55,20 @@ options     head
       return null;
     }
   }
+
+snippet     nstore
+abbr        const {...}Store = React.createContext<IState>({});
+options     head
+  import React from 'react';
+
+  interface IState {}
+
+  export const ${1:#:NAME}Store = React.createContext<IState>({});
+
+  const ${2:#:NAME}Provider: React.SFC<{}> = ({ children }) => {
+    return (
+      <${3:#:NAME}.Provider value={{}}>{children}</${3:#:NAME}.Provider>
+    );
+  };
+
+  export default ${3:#:NAME}Provider;
