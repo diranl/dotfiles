@@ -195,7 +195,7 @@ let g:jsx_ext_required = 0
 " filetypes like xml, html, xhtml, ...
 " These are the file types where this plugin is enabled.
 "
-let g:closetag_filetypes = 'html,xhtml,handlebars,mako,xml,jsx,typescript'
+let g:closetag_filetypes = 'html,xhtml,handlebars,mako,xml,jsx,typescript.tsx'
 
 " Shortcut for closing tags, default is '>'
 "
@@ -251,6 +251,7 @@ autocmd FileType javascript.jsx set tabstop=2|set shiftwidth=2
 " Prettier javascript
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 " print spaces between brackets
 " Prettier default: true
 let g:prettier#config#bracket_spacing = 'true'
