@@ -72,3 +72,14 @@ options     head
   };
 
   export default ${3:#:NAME}Provider;
+
+snippet     nfc
+abbr        const {...} = React.SFC<{}> = ({}) => {
+options     head
+  import React from 'react';
+
+  const ${1:#:NAME}: React.SFC<{}> = ({}) => {
+    return null;
+  };
+
+  export default ${2:#:NAME};
