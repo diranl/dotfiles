@@ -4,7 +4,7 @@
 	signingkey = 4C409251067E89B85A2293C8059CE4C74C66B0CA
 [core]
   ignorecase = false
-  editor = /usr/bin/vim
+  editor = /usr/local/bin/nvim
   autocrlf = false
 	excludesfile = /Users/diranl/.gitignore_global
 [branch]
