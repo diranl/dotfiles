@@ -68,7 +68,7 @@ setopt NO_HUP
 setopt VI
 
 # only fools wouldn't do this ;-)
-export EDITOR="vi"
+export EDITOR="nvim"
 
 
 # setopt IGNORE_EOF
