@@ -45,3 +45,5 @@
 	process = git-lfs filter-process
 [commit]
 	gpgsign = true
+[diff "sopsdiffer"]
+	textconv = sops -d

@@ -22,8 +22,4 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Meridian
-export AGORA_DB=
-export KAIKO_API_KEY=
-export MERIDIAN_DB=
-export MESSARI_DB=
-export SENTRY_DSN=
+export AWS_PROFILE=meridian

@@ -19,18 +19,36 @@ options     head
 snippet     nsfc
 abbr        const {...} React.SFC<WithStyles<typeof styles>> {...}
 options     head
-  import { Theme, WithStyles, createStyles, withStyles } from '@material-ui/core/styles';
+  import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
   import React from 'react';
 
-  const styles = (theme: Theme) => createStyles({
-    container: {}
-  });
+  const useStyles = makeStyles((theme: Theme) => createStyles({
+    container: {},
+  }));
 
-  const ${1:#:NAME}: React.SFC<WithStyles<typeof styles>> = ({ classes }) => {
-      return null;
+  const ${1:#:NAME}: React.SFC<{}> = () => {
+    const classes = useStyles();
+    return null;
   }
 
-  export default withStyles(styles)(${2:#:NAME});
+  export default ${2:#:NAME};
+
+snippet     nfc
+abbr        const {...} = React.SFC<{}> = ({}) => {
+options     head
+  import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
+  import React from 'react';
+
+  const useStyles = makeStyles((theme: Theme) => createStyles({
+    container: {},
+  }));
+
+  const ${1:#:NAME}: React.FC = () => {
+    const classes = useStyles();
+    return null;
+  };
+
+  export default ${2:#:NAME};
 
 snippet     jsfc
 abbr        const {...}: React.SFC<{...}> { ... }
@@ -73,13 +91,3 @@ options     head
 
   export default ${3:#:NAME}Provider;
 
-snippet     nfc
-abbr        const {...} = React.SFC<{}> = ({}) => {
-options     head
-  import React from 'react';
-
-  const ${1:#:NAME}: React.SFC<{}> = ({}) => {
-    return null;
-  };
-
-  export default ${2:#:NAME};
