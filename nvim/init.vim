@@ -41,10 +41,12 @@ let g:python3_host_prog = '/git/miniconda3/bin/python3'
 let g:deoplete#enable_at_startup = 1
 autocmd FileType typescript call deoplete#disable()
 
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#enable_refresh_always = 1
+call deoplete#custom#option({
+      \  'ignore_case': v:true,
+      \  'smart_case': v:true,
+      \  'camel_case': v:true,
+      \  'refresh_always': v:true,
+      \ })
 let g:deoplete#max_abbr_width = 0
 let g:deoplete#max_menu_width = 0
 
