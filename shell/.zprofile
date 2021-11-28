@@ -23,3 +23,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Meridian
 export AWS_PROFILE=meridian
+eval "$(/opt/homebrew/bin/brew shellenv)"
