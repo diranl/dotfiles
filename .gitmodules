@@ -133,3 +133,6 @@
 [submodule "vim/bundle/vim/bundle/copilot"]
 	path = vim/bundle/vim/bundle/copilot
 	url = git@github.com:github/copilot.vim
+[submodule "vim/bundle/copilot"]
+	path = vim/bundle/copilot
+	url = git@github.com:github/copilot.vim
