@@ -130,3 +130,6 @@
 [submodule "vim/bundle/auto-pairs"]
 	path = vim/bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "vim/bundle/vim/bundle/copilot"]
+	path = vim/bundle/vim/bundle/copilot
+	url = git@github.com:github/copilot.vim
