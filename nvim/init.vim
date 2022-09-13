@@ -4,7 +4,7 @@ let &packpath = &runtimepath
 source ~/.vimrc
 
 " Setup python3
-let g:python3_host_prog = '/git/miniconda3/bin/python3'
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
 
 " " Install Vim Plug if not installed
 " if empty(glob('~/.config/nvim/autoload/plug.vim'))
