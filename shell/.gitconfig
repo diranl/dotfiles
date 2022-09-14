@@ -4,7 +4,7 @@
 	signingkey = 4C409251067E89B85A2293C8059CE4C74C66B0CA
 [core]
   ignorecase = false
-  editor = /usr/local/bin/nvim
+  editor = /opt/homebrew/bin/nvim
   autocrlf = false
 	excludesfile = /Users/diranl/.gitignore_global
 [branch]
@@ -47,3 +47,5 @@
 	gpgsign = true
 [diff "sopsdiffer"]
 	textconv = sops -d
+[url "git@github.com:"]
+	insteadOf = https://github.com/
